@@ -1,4 +1,5 @@
 import { Search } from "@material-ui/icons";
+import Badge from '@mui/joy/Badge';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -71,9 +72,15 @@ const navbar = () => {
                 </Logo>
             </Center>
             <Right>
+
+
                 <MenuItem>Register</MenuItem>
                 <MenuItem>Sign In</MenuItem>
-                <MenuItem></MenuItem>
+                <MenuItem>
+                    <Badge badgeContent={4} color="primary"> 
+                        <ShoppingCartOutlined />
+                    </Badge>
+                </MenuItem>
             </Right>
         </Wrapper>
     </Container>
